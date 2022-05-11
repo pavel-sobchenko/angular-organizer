@@ -1,0 +1,27 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Run Tests and Coverage
+          caches:
+            - node
+          script:
+             - echo 'skip'
+#            - npm set registry $NODE_REPO
+#            - npm install
+#            - npm run lint
+#            - mv ./src/app.development.json ./src/app.json
+#            - npm run test:coverage
+#          artifacts:
+#            - test-results/**
+#  default:
+#    - step:
+#        caches:
+#          - node
+#        script:
+#          - npm set registry $NODE_REPO
+#          - npm install
+#          - npm run lint
+#          - mv ./src/app.development.json ./src/app.json
+#          - npm run test:coverage
+#          - npm run build:ci
