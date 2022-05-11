@@ -14,7 +14,7 @@ export class OrganizerComponent implements OnInit {
   form: FormGroup
   tasks: Task[] = []
 
-  constructor(private dateService: DateService,
+  constructor(public dateService: DateService,
               private tasksService: TasksService) {
   }
 
